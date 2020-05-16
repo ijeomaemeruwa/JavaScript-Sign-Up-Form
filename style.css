@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: url(img/desktop.jpg), no-repeat;
+    background-size: cover;
+    color: #fff;
+    font-family: 'Jost', sans-serif;
+    overflow: hidden;
+    display: flex;
+    min-height: 100vh;
+    margin: 0;
+    align-items: center;
+    
+}
+
+.container {
+    background-color: rgba(44, 62, 80, 0.4) ;
+    border-radius: 10px;
+    width: 400px;
+    max-width: 100%;
+    margin: 0 auto;
+    
+}
+
+
+.header {
+    border-bottom: 1px solid #fff;
+    padding: 20px 40px;
+    
+}
+
+.header h2 {
+    margin: 0;
+    text-align: center;
+}
+
+.form {
+    padding: 30px 40px;
+    
+}
+
+.form-detail {
+    margin-bottom: 10px;
+    padding-bottom: 20px; /* Space for Error Prompt */
+    position: relative;
+}
+
+.form-detail label {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: 18px;
+    
+}
+
+.form-detail input {
+    border: 1px #312d2f;
+    border-radius: 20px;
+    display: block;
+    font-family: 'Jost', sans-serif;
+    font-size: 18px;
+    padding: 10px;
+    width: 100%;
+}
+
+
+.form-detail i {
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    visibility: hidden;
+}
+
+.form-detail.success i.fa-check-circle {
+    color: #00a86b;
+    visibility: visible;
+}
+
+
+.form-detail.error i.fa-exclamation-circle {
+    color: #ff0000;
+    visibility: visible;
+}
+
+
+.form-detail small {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.form-detail.error small {
+    color: #ea2340;
+    visibility: visible;
+}
+
+.form button {
+    color: #312d2f;
+    border: 3px solid #312d2f;
+    border-radius: 25px;
+    display: block;
+    font-family: 'Jost' sans-serif;
+    font-size: 14px;
+    padding: 10px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.form button:hover {
+    background: #793f5c;
+    color: #fff
+}
+
+@media screen and (max-width: 667px) {
+    .header h2 {
+        font-size: 18px;
+    }
+
+    .form-detail label {
+        font-size: 16px;
+    }
+
+    .form-detail input {
+        font-size: 16px;
+    }
+
+
+}
