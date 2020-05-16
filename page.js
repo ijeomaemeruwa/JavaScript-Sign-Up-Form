@@ -77,7 +77,7 @@ function setErrorFor(input, message) {
 
 function setSuccessFor(input) {
     const formDetail = input.parentElement;
-    formDetail.className = 'form-detail success'; 
+    formDetail.className = 'form-detail success';
 }
 
 function validEmail(email) {
